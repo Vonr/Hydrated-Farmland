@@ -1,7 +1,7 @@
 {
     "Group": "dev.qther",
     "Name": "HydratedFarmland",
-    "Version": "1.0.0",
+    "Version": "1.0.1",
     "Description": "Hytale plugin that hydrates farmland close to water",
     "Authors": [
         {
