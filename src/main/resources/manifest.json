@@ -1,0 +1,22 @@
+{
+    "Group": "dev.qther",
+    "Name": "HydratedFarmland",
+    "Version": "1.0.0",
+    "Description": "Hytale plugin that hydrates farmland close to water",
+    "Authors": [
+        {
+            "Name": "Qther"
+        }
+    ],
+    "Website": "https://github.com/Vonr/Hydrated-Farmland",
+    "ServerVersion": "*",
+    "Dependencies": {
+        
+    },
+    "OptionalDependencies": {
+        
+    },
+    "DisabledByDefault": false,
+    "Main": "dev.qther.hydrated_farmland.HydratedFarmland",
+    "IncludesAssetPack": true
+}
