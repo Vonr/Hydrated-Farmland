@@ -34,7 +34,7 @@ public class FarmlandHydrationSystem extends EntityTickingSystem<ChunkStore> {
 
         var random = ThreadLocalRandom.current();
 
-        try {
+        worldChunk.getWorld().execute(() -> {
             for (int tick = 0; tick < ticks; tick++) {
                 var x = ChunkUtil.worldCoordFromLocalCoord(worldChunk.getX(), random.nextInt(32));
                 var y = random.nextInt(320);
@@ -42,7 +42,7 @@ public class FarmlandHydrationSystem extends EntityTickingSystem<ChunkStore> {
 
                 checkWaterSource(worldChunk, x, y, z, distance);
             }
-        } catch (Exception ignored) {}
+        });
     }
 
     private static void checkWaterSource(WorldChunk worldChunk, int x, int y, int z, int distance) {
